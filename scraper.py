@@ -10,7 +10,7 @@ wait = WebDriverWait(driver, 10)
 
 quotes = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "quote")))
 
-print("📝 Quotes:\n")
+print("Quotes:\n")
 
 for quote in quotes:
     text = quote.find_element(By.CLASS_NAME, "text").text
